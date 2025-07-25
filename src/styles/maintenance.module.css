@@ -1,14 +1,15 @@
 .container {
+  margin-top: 100px;
+
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  gap: 100px;
+  align-items: center;
+  gap: 150px;
 }
 
 .content {
   display: flex;
-  gap: 5rem;
+  gap: 42px;
 }
 
 .text {
@@ -16,6 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 12px;
   max-width: 40vw;
 }
 
@@ -27,17 +29,22 @@
 
 .thanks {
   position: absolute;
-  bottom: -5rem;
+  bottom: -150px;
 }
 
-@media screen and (max-width: 1024px) {
-  .text {
-    max-width: 30vw;
+@media screen and (min-width: 1024px) {
+  .container {
+    align-items: flex-start;
+    gap: 100px;
+  }
+
+  .thanks {
+    bottom: -5rem;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    align-items: center;
+@media screen and (min-width: 1280px) {
+  .thanks {
+    bottom: -100px
   }
 }
