@@ -1,9 +1,9 @@
-import { Hero } from "@/features/Home/Hero";
+import { Maintenance } from "@/features/Home/Maintenance";
 
 export default function Home() {
   return (
-    <div className="bg-[url('/background.png')] w-screen h-screen">
-      <Hero />
+    <div className="w-screen h-screen">
+      <Maintenance />
     </div>
   );
 }
